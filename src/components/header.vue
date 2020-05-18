@@ -57,7 +57,7 @@ import axios from 'axios'
     },
     mounted () {
       axios
-      .get(`https://api.openweathermap.org/data/2.5/weather?q=local&APPID=${this.meteo.appID}`) // take care of that link, go to https://openweathermap.org/ and read their documentation for get your api ID and the good link for your local coordonates. 
+      .get(`https://api.openweathermap.org/data/2.5/weather?q=local&APPID=${this.weather.appID}`) // take care of that link, go to https://openweathermap.org/ and read their documentation for get your api ID and the good link for your local coordonates. 
       .then(response => (
         this.weather.icon = response.data.weather[0].icon,
         this.weather.temperature = Math.round(response.data.main.temp - 273.15),
