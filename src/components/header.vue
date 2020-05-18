@@ -1,4 +1,4 @@
-<template id="template-header">
+<template>
   <div id="wrapper-header">
       <div id="time">
         {{ horloge  }}
@@ -76,7 +76,6 @@ import axios from 'axios'
   // grid-template-columns: 40% 30% 30%;
   // grid-template-rows: 30% 30% 40%;
 
-  // justify-items: stretch;
 }
   #time{
     color: white;
@@ -89,46 +88,46 @@ import axios from 'axios'
     grid-column: 1 / 6;
     grid-row: 1 / 2;
   }
-    #date{
+  #date{
+    color: white;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    padding: 0.5em 0.2em 0 0.2em;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+  }
+  #weather{
+    grid-column: 6 / 9;
+    grid-row: 1 / 3;
+    #weather-icon{
+      filter: invert(100%);
+      width: 5rem;
+      padding-top: 1.3rem;
+      float: left;
+    }
+    #weather-temp{
+      color: white;
+      font-weight: 1000;
+      font-size: 3rem;
+      font-variant: small-caps;
+      padding-top:1.3rem;
+    }
+    #weather-description{
       color: white;
       font-weight: 1000;
       font-size: 1.5rem;
       font-variant: small-caps;
-      padding: 0.5em 0.2em 0 0.2em;
-      grid-column: 1 / 6;
-      grid-row: 2 / 3;
+      align-self: stretch;
     }
-    #weather{
-      grid-column: 6 / 9;
-      grid-row: 1 / 3;
-      #weather-icon{
-        filter: invert(100%);
-        width: 5rem;
-        padding-top: 1.3rem;
-        float: left;
-      }
-      #weather-temp{
-        color: white;
-        font-weight: 1000;
-        font-size: 3rem;
-        font-variant: small-caps;
-        padding-top:1.3rem;
-      }
-      #weather-description{
-        color: white;
-        font-weight: 1000;
-        font-size: 1.5rem;
-        font-variant: small-caps;
-        align-self: stretch;
-      }
-    }
-      #kawaiiGif{
-        grid-column: 9 / 13;
-        grid-row: 1 / 3;
-        #gif{
-          width: 100px;
-          overflow: hidden;
-          padding-top: 20px;
-        }
-      }
+  }
+  #kawaiiGif{
+   grid-column: 9 / 13;
+   grid-row: 1 / 3;
+   #gif{
+    width: 100px;
+    overflow: hidden;
+    padding-top: 20px;
+   }
+  }
 </style>

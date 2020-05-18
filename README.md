@@ -1,4 +1,4 @@
-# new-tab-accueil3
+# new-tab-accueil
 
 ## Project setup
 ```
