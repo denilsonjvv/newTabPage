@@ -18,7 +18,9 @@
     </div>
     <div id="kawaiiGif">
         <img id="gif" src="@/assets/gifKawaii.gif" alt="gifKawaii">
+    </div>
   </div>
+
 </template>
 
 <script>
