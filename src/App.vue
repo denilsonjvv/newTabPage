@@ -6,6 +6,8 @@
 
 <style lang="scss">
 @import "@/assets/basicStyle";
+@import "@/assets/homeStyle";
+@import "@/assets/headerStyle";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

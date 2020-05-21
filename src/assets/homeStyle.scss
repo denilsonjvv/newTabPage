@@ -1,0 +1,131 @@
+#home{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    #header{
+        width: 100%;
+        height: 6em;
+        justify-content: center;
+        box-shadow:2px 2px 2px gray,
+        -1px -1px 2px white;
+        overflow: hidden;
+    }
+    .buttons{
+        width: 100%;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 10px;
+        grid-auto-rows: minmax(5vh, auto);
+        row-gap: 10px;
+
+    }
+
+        #news{
+        grid-column: 1/5;
+        grid-row: 1;
+
+        justify-self: end;
+        align-self: end;
+        z-index: 1;
+    }
+
+    #codage_hacking{
+        grid-column: 5/9;
+        grid-row: 1;
+
+        justify-self: center;
+        align-self: end;
+        z-index: 1;
+    }
+
+    #lienUtilesAstuces{
+        grid-column: 9/13;
+        grid-row: 1;
+
+        justify-self: start;
+        align-self: end;
+        z-index: 1;
+    }
+
+    #rechercheEnquete{
+        grid-column: 1/7;
+        grid-row: 2;
+
+        justify-self: end;
+        align-self: start;
+    }
+
+    #music{
+        grid-column: 7/13;
+        grid-row: 2;
+
+        justify-self: start;
+        align-self: start;
+    }
+
+    #app-videoLoop{
+        background-color: transparent;
+        pointer-events: none;
+        #videoLoop{
+            width: 35vw;
+        }
+    }
+  }
+  .dropdownMenu{
+    background-color: white;
+    color: #73a2a0;
+    width: 15em;
+    font-weight: 900;
+    font-size: 1em;
+    padding: 10px 10px 10px 10px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow:3px 3px 3px gray;
+    .title{
+      font-size: 0.9em;
+    }
+    &:hover {
+      background-color: #73a2a0;
+      color: white;
+      transition: 0.2s ease-out;
+      box-shadow: 0 0 0 gray;
+    }
+    .label{
+      background-color: white;
+      padding: 10px 5px 10px 5px;
+      z-index: 0;
+      a{
+        color: #73a2a0;
+        z-index: 0;
+      }
+      &:hover {
+        background-color: #73a2a0;
+        a{
+          color:white;
+        }
+      }
+    }
+    .menu{
+  
+      position: absolute;
+      opacity: 0;
+      transform: translateY(-50px);
+      background-color: white;
+      margin: auto;
+      width: 15em;
+      list-style: none;
+      pointer-events: none;
+      transition: 0.2s ease-out;
+      z-index: 0;
+    }
+    &:hover {
+      > .menu{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+        z-index: 0;
+      }
+    }
+  }
